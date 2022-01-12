@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    docker-jekyll (0.1)
+    jekyll-template (0.1)
       jekyll (>= 3.5, < 5.0)
 
 GEM
@@ -80,10 +80,10 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.2.24)
-  docker-jekyll!
   jekyll-feed
   jekyll-seo-tag
   jekyll-sitemap
+  jekyll-template!
   jekyll-tidy
 
 BUNDLED WITH

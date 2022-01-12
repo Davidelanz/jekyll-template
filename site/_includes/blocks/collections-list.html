@@ -1,0 +1,14 @@
+<h4>Collections list:</h4>
+
+<ul>
+    {% for coll in site.collections %}
+    <li>{{ coll.label }}</li>
+    <ul>
+        {% for doc in coll.docs %}
+        <li>
+            <a href="{{ doc.url }}">{{ doc.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</ul>
