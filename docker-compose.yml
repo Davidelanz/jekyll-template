@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  serve:
+    container_name: jekyll-serve
+    image: jekyll/jekyll:4 # jekyll ver should be same as image in .gemspec
+    command: jekyll serve --host 0.0.0.0 --future --draft --livereload
+    environment:
+      JEKYLL_ENV: local
+    ports:
+      - 4000:4000 # Website port
+      - 35729:35729 # Livereload port
+    volumes:
+      - ./site:/srv/jekyll

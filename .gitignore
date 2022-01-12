@@ -1,0 +1,11 @@
+# VScode
+**/.vscode
+
+# Jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
+# Ignore Jekyll building output
+/public/

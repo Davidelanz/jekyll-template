@@ -1,0 +1,10 @@
+---
+layout: none
+---
+
+User-agent: *
+Allow: /
+
+{% if site.sitemap %}
+Sitemap: {{ site.url }}/sitemap.xml
+{% endif %}

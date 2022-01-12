@@ -1,0 +1,32 @@
+---
+layout: default
+title: Index
+# permalink: /
+---
+
+<h1>
+    Hello World!
+</h1>
+
+<p>
+    Hello World!
+    <br>
+    <i>Hello World in italics!</i>
+    <br>
+    <b>Hello World in bold!</b>
+</p>
+
+
+{% for collection in site.collections %}
+{{ collection.label }} <br>
+{{ collection }} <br>
+{% endfor %}
+
+
+<ul>
+    {% for article in site.articles %}
+    <li>
+        <a href="{{ article.url }}">{{ article.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
