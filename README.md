@@ -13,8 +13,16 @@ This is a template repository for easily set up a Jekyll site and locally testin
    ```sh
    git clone https://github.com/Davidelanz/jekyll-template.git
    ```
-4. Run dockerized local webserver with 
+4. Run dockerized local webserver with
    ```sh
    cd jekyll-template
    docker-compose up
-   ``` 
+   ```
+5. Your site is locally deployed at http://localhost:4000.
+
+You can then start developing your Jekyll site in the `/site` folder.
+
+## Production Deployment
+
+You can deploy the site contained in this repository via [netlify](https://docs.netlify.com/).
+The ``netlify.toml` configuration file takes already care of the build settings.
