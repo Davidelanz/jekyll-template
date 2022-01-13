@@ -25,4 +25,4 @@ You can then start developing your Jekyll site in the `/site` folder.
 ## Production Deployment
 
 You can deploy the site contained in this repository via [netlify](https://docs.netlify.com/).
-The ``netlify.toml` configuration file takes already care of the build settings.
+The `netlify.toml` configuration file takes already care of the build settings.
